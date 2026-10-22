@@ -1,0 +1,6 @@
+/* Lays out the todo cards (see TodoList.jsx) in a 4-column grid,
+   with each column taking an equal share of the available width. */
+.todo-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
