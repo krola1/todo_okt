@@ -6,6 +6,9 @@ const TodoContext = createContext(null);
 export default function TodoProvider({ children }) {
   const [todos, setTodos] = useLocalStorage("todookt");
 
+  // takes in a string
+  //creates a newItem object with that string as "title"
+  // uses spread to include all exixting items in new array, before new item is appended.
   const addItem = (text) => {
     const newTask = {
       id: crypto.randomUUID(),
@@ -26,7 +29,7 @@ export default function TodoProvider({ children }) {
 
   //edit
 
-  const value = { todos, addItem };
+  const value = { todos, addItem, removeItem };
   return <TodoContext.Provider value={value}>{children}</TodoContext.Provider>;
 }
 
