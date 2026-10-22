@@ -6,6 +6,8 @@ export default function TodoCard({ title, createdAt, complete }) {
       <label htmlFor="">
         <input type="checkbox" checked={complete} />
       </label>
+      <button>Delete</button>
+      <button>Edit</button>
     </div>
   );
 }

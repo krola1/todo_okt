@@ -7,6 +7,6 @@ createRoot(document.getElementById("root")).render(
   <StrictMode>
     <TodoProvider>
       <App />
-    </TodoProvider>{" "}
+    </TodoProvider>
   </StrictMode>,
 );
